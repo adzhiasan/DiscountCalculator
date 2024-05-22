@@ -1,0 +1,63 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+@using System.ComponentModel.DataAnnotations
+
+<EditForm Model="@_my">
+    <div class="form-group mb-3">
+        <label for="count">Количество:</label>
+        <InputNumber id="count" class="form-control" @bind-Value="_my.Count" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="price">Цена:</label>
+        <InputNumber id="price" class="form-control" @bind-Value="_my.Price" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="price">Штаты:</label>
+        <InputSelect @bind-Value="_my.TaxState">
+            @foreach (var value in _taxStates.Keys)
+            {
+            <option value="@value">@value</option>
+            }
+        </InputSelect>
+    </div>
+    
+    <p>@GetTax()% налог!</p>
+    
+    <p>@Calculate() деняк</p>
+</EditForm>
+
+@code {
+    private readonly MyModel _my = new();
+    private readonly Dictionary<string, decimal> _taxStates = new()
+    {
+        ["NV"] = 8,
+        ["TX"] = 6.25m,
+        ["UT"] = 6.85m,
+        ["AL"] = 4,
+        ["CA"] = 8.25m,
+    };
+    
+    public class MyModel
+    {
+        public int Count { get; set; }
+        public decimal Price { get; set; }
+        public string TaxState { get; set; } = "NV";
+    }
+
+    public decimal Calculate()
+    {
+        return MultiplyTax(_my.Count * _my.Price);
+    }
+
+    public decimal MultiplyTax(decimal source)
+    {
+        return source * (1 + GetTax() / 100);
+    }
+
+    public decimal GetTax()
+    {
+        return _taxStates[_my.TaxState];
+    }
+}
