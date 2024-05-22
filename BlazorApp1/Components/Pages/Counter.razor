@@ -28,6 +28,7 @@
     <p>Налог: @GetTax()%</p>
     <p>Скидка: @GetDiscount()%</p>
     <p><s>Цена без скидки: @GetPrimaryPrice()</s></p>
+    <p><s>Налог в долларах: @GetTaxInDollars()</s></p>
     
 </EditForm>
 
@@ -63,6 +64,11 @@
     public decimal Calculate()
     {
         return GetPrimaryPrice() * (1 + GetTax() / 100) * (1 - GetDiscount() / 100);
+    }
+
+    public decimal GetTaxInDollars()
+    {
+        return GetPrimaryPrice() * (GetTax() / 100);
     }
 
     public decimal GetPrimaryPrice()
