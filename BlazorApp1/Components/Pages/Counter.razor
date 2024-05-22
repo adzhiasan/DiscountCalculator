@@ -11,20 +11,39 @@
         <label for="price">Цена:</label>
         <InputNumber id="price" class="form-control" @bind-Value="_my.Price" />
     </div>
+
+    <div class="form-group mb-3">
+        <label for="price">Штат:</label>
+        <InputSelect @bind-Value="@_my.State">
+            @foreach (var option in _taxStates.Keys)
+            {
+            <option value="@option">@option</option>
+            }
+        </InputSelect>
+    </div>
     
     <p>Сумма: @Calculate()</p>
-    <p>Налог: @GetTax()</p>
+    <p>Налог: @GetTax()%</p>
     
 </EditForm>
 
 @code
 {
     private readonly MyModel _my = new MyModel();
+    private readonly Dictionary<string, decimal> _taxStates = new()
+    {
+        ["NV"] = 8,
+        ["TX"] = 6.25m,
+        ["UT"] = 6.85m,
+        ["AL"] = 4,
+        ["CA"] = 8.25m
+    };
     
     public class MyModel
     {
         public int Count { get; set; }
         public decimal Price { get; set; }
+        public string State { get; set; } = "NV";
     }
 
     public decimal Calculate()
@@ -34,6 +53,6 @@
     
     public decimal GetTax()
     {
-        return 8;
+        return _taxStates[_my.State];
     }
 }
