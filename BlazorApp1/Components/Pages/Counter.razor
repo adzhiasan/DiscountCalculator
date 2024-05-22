@@ -13,6 +13,7 @@
     </div>
     
     <p>Сумма: @Calculate()</p>
+    <p>Налог: @GetTax()</p>
     
 </EditForm>
 
@@ -28,6 +29,11 @@
 
     public decimal Calculate()
     {
-        return _my.Count * _my.Price;
+        return _my.Count * _my.Price * (1 + GetTax() / 100);
+    }
+    
+    public decimal GetTax()
+    {
+        return 8;
     }
 }
