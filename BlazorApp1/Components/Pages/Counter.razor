@@ -1,4 +1,6 @@
 ﻿@page "/counter"
+@using System.Linq.Expressions
+@using System.Diagnostics
 @rendermode InteractiveServer
 
 <EditForm Model="@_my">
@@ -39,6 +41,16 @@
         ["AL"] = 4,
         ["CA"] = 8.25m
     };
+    /*
+    private readonly Dictionary<decimal, decimal> _discountList = new()
+    {
+        [1000] = 3,
+        [5000] = 5,
+        [7000] = 7,
+        [10000] = 10,
+        [15000] = 15
+    };
+    */
     
     public class MyModel
     {
@@ -64,6 +76,23 @@
 
     public decimal GetDiscount()
     {
-        return GetPrimaryPrice() > 1000 ? 3 : 0;
+        var x = GetPrimaryPrice();
+        switch (x)
+        {
+            case >= 15000:
+                return 15;
+            case >= 10000:
+                return 10;
+            case >= 7000:
+                return 7;
+            case >= 5000:
+                return 5;
+            case >= 1000:
+                return 3;
+            default:
+                return 0;
+        }
+
+        
     }
 }
