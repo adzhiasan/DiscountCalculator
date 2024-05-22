@@ -45,6 +45,24 @@
         <tbody>
         @foreach (var state in _discountList)
         {
+            <tr>
+                <td>@state.Key</td>
+                <td>@state.Value</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Штат</th>
+            <th>Налог (%)</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var state in _taxStates)
+        {
         <tr>
             <td>@state.Key</td>
             <td>@state.Value</td>
