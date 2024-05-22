@@ -24,6 +24,7 @@
     
     <p>Сумма: @Calculate()</p>
     <p>Налог: @GetTax()%</p>
+    <p>Скидка: @GetDiscount()%</p>
     
 </EditForm>
 
@@ -48,11 +49,21 @@
 
     public decimal Calculate()
     {
-        return _my.Count * _my.Price * (1 + GetTax() / 100);
+        return GetPrimaryPrice() * (1 + GetTax() / 100) * (1 - GetDiscount() / 100);
+    }
+
+    public decimal GetPrimaryPrice()
+    {
+        return _my.Count * _my.Price;
     }
     
     public decimal GetTax()
     {
         return _taxStates[_my.State];
+    }
+
+    public decimal GetDiscount()
+    {
+        return GetPrimaryPrice() > 1000 ? 3 : 0;
     }
 }
