@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J5qj7FTzl3ln6rb/EZNE5smFsJu3mbhTeQojKQULtlA=",
+  "Hash": "iOpuuSNF9sr9D8ztje3wuo4KRDHwMeytNBezGsaDY0s=",
   "Source": "BlazorApp",
   "BasePath": "_content/BlazorApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BlazorApp/wwwroot",
       "Source": "BlazorApp",
-      "ContentRoot": "/Users/adzhiasan.a/BlazorApp/wwwroot/",
+      "ContentRoot": "/Users/aralbaeva/RiderProjects/DiscountCalculator/wwwroot/",
       "BasePath": "_content/BlazorApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/adzhiasan.a/BlazorApp/obj/Debug/net8.0/scopedcss/bundle/BlazorApp.styles.css",
+      "Identity": "/Users/aralbaeva/RiderProjects/DiscountCalculator/obj/Debug/net8.0/scopedcss/bundle/BlazorApp.styles.css",
       "SourceId": "BlazorApp",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/adzhiasan.a/BlazorApp/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/aralbaeva/RiderProjects/DiscountCalculator/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/BlazorApp",
       "RelativePath": "BlazorApp.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/adzhiasan.a/BlazorApp/obj/Debug/net8.0/scopedcss/bundle/BlazorApp.styles.css"
+      "OriginalItemSpec": "/Users/aralbaeva/RiderProjects/DiscountCalculator/obj/Debug/net8.0/scopedcss/bundle/BlazorApp.styles.css"
     },
     {
-      "Identity": "/Users/adzhiasan.a/BlazorApp/obj/Debug/net8.0/scopedcss/projectbundle/BlazorApp.bundle.scp.css",
+      "Identity": "/Users/aralbaeva/RiderProjects/DiscountCalculator/obj/Debug/net8.0/scopedcss/projectbundle/BlazorApp.bundle.scp.css",
       "SourceId": "BlazorApp",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/adzhiasan.a/BlazorApp/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/aralbaeva/RiderProjects/DiscountCalculator/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/BlazorApp",
       "RelativePath": "BlazorApp.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/adzhiasan.a/BlazorApp/obj/Debug/net8.0/scopedcss/projectbundle/BlazorApp.bundle.scp.css"
+      "OriginalItemSpec": "/Users/aralbaeva/RiderProjects/DiscountCalculator/obj/Debug/net8.0/scopedcss/projectbundle/BlazorApp.bundle.scp.css"
     },
     {
-      "Identity": "/Users/adzhiasan.a/BlazorApp/wwwroot/app.css",
+      "Identity": "/Users/aralbaeva/RiderProjects/DiscountCalculator/wwwroot/app.css",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/adzhiasan.a/BlazorApp/wwwroot/",
+      "ContentRoot": "/Users/aralbaeva/RiderProjects/DiscountCalculator/wwwroot/",
       "BasePath": "_content/BlazorApp",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot/app.css"
     },
     {
-      "Identity": "/Users/adzhiasan.a/BlazorApp/wwwroot/bootstrap/bootstrap.min.css",
+      "Identity": "/Users/aralbaeva/RiderProjects/DiscountCalculator/wwwroot/bootstrap/bootstrap.min.css",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/adzhiasan.a/BlazorApp/wwwroot/",
+      "ContentRoot": "/Users/aralbaeva/RiderProjects/DiscountCalculator/wwwroot/",
       "BasePath": "_content/BlazorApp",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/adzhiasan.a/BlazorApp/wwwroot/bootstrap/bootstrap.min.css.map",
+      "Identity": "/Users/aralbaeva/RiderProjects/DiscountCalculator/wwwroot/bootstrap/bootstrap.min.css.map",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/adzhiasan.a/BlazorApp/wwwroot/",
+      "ContentRoot": "/Users/aralbaeva/RiderProjects/DiscountCalculator/wwwroot/",
       "BasePath": "_content/BlazorApp",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/adzhiasan.a/BlazorApp/wwwroot/favicon.png",
+      "Identity": "/Users/aralbaeva/RiderProjects/DiscountCalculator/wwwroot/favicon.png",
       "SourceId": "BlazorApp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/adzhiasan.a/BlazorApp/wwwroot/",
+      "ContentRoot": "/Users/aralbaeva/RiderProjects/DiscountCalculator/wwwroot/",
       "BasePath": "_content/BlazorApp",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

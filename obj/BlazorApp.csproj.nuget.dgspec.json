@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/adzhiasan.a/BlazorApp/BlazorApp.csproj": {}
+    "/Users/aralbaeva/RiderProjects/DiscountCalculator/BlazorApp.csproj": {}
   },
   "projects": {
-    "/Users/adzhiasan.a/BlazorApp/BlazorApp.csproj": {
+    "/Users/aralbaeva/RiderProjects/DiscountCalculator/BlazorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/adzhiasan.a/BlazorApp/BlazorApp.csproj",
+        "projectUniqueName": "/Users/aralbaeva/RiderProjects/DiscountCalculator/BlazorApp.csproj",
         "projectName": "BlazorApp",
-        "projectPath": "/Users/adzhiasan.a/BlazorApp/BlazorApp.csproj",
-        "packagesPath": "/Users/adzhiasan.a/.nuget/packages/",
-        "outputPath": "/Users/adzhiasan.a/BlazorApp/obj/",
+        "projectPath": "/Users/aralbaeva/RiderProjects/DiscountCalculator/BlazorApp.csproj",
+        "packagesPath": "/Users/aralbaeva/.nuget/packages/",
+        "outputPath": "/Users/aralbaeva/RiderProjects/DiscountCalculator/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/adzhiasan.a/.nuget/NuGet/NuGet.Config"
+          "/Users/aralbaeva/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

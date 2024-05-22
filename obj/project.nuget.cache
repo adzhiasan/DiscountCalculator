@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LU+CtdnISWNZQGJATzfWO2Hz8GTkZfJDTj2X93t0ET+PH/D1mo4yw4h3wRL7HWTUU95pDu5XRvI7Jy5Hhr1Dfg==",
+  "dgSpecHash": "gLoYjoPnlW1sI04W9Wh8IUNeQ+dGVwkwTAC+BBa8tp9gi8TcnR+ISoH4jzxs1vvq/kCgW9qlA3ucoYdpZAQfRw==",
   "success": true,
-  "projectFilePath": "/Users/adzhiasan.a/BlazorApp/BlazorApp.csproj",
+  "projectFilePath": "/Users/aralbaeva/RiderProjects/DiscountCalculator/BlazorApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
